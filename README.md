@@ -1,4 +1,5 @@
 ![](images/sernegra_marca.png)
+
 X SERNEGRA
 ---
 
@@ -62,6 +63,6 @@ A parte mais importante, o que falta:
 - O botão de "Realizar Inscrilção" apontar pro Even3 e
 - Colocar o relógio, posso ver o que precisa ser feito (ou podemos escrever
   um).
-  
-  ---
-  Bom trabalho para vocês!
+
+---
+Bom trabalho para vocês!
