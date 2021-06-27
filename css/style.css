@@ -1,0 +1,41 @@
+.fundo-capa {
+  background-color: #d9ad6e;
+}
+
+BODY {
+  background-color: #f1e4d1;
+  font-size: 14pt;
+}
+
+.sernegra-fg-brown{
+  color: #6c433d;
+}
+
+.sernegra-bg-dark-brown{
+  background-color: #4b3635;
+}
+.sernegra-bg-brown{
+  background-color: #6c433d;
+}
+.sernegra-bg-light-brown{
+  background-color: #d9ad6e;
+}
+
+.sernegra-bg-green{
+  background-color: #5caa76;
+}
+
+/*
+  Paleta de Cores:
+    #000000 = preto
+    #4b3635 = marrom escuro
+    #6c433d = marrom
+    #d9ad6e = marrom claro
+    #e9d298 = amarelo(?) escuro
+    #f1e4d1 = amrarel(?) claro
+    #ffffff = branco
+    #5caa76  
+    #359937 = verde do IF
+    #ce1d21 = vermelho do IF
+    #888a85 = um cinz genérico'
+*/
