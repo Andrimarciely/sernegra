@@ -13,14 +13,15 @@
     <meta property="og:title" content="X SERNEGRA">
     <meta property="og:site_name" content="X SERNEGRA">
     <meta property="og:description" content="Negritude e Pretice na Amazônia: Resistências da Floresta e das Águas. De 23 a 26 de novembro de 2021.">
-    <meta property="og:image" content="...">
+    <meta property="og:image" content="images/social/x_sernegra.jpeg">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1920">
-    <meta property="og:image:height" content="1080">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
     <meta property="og:type" content="website">
-    <!-- fim da XoXo media -->
     <title>X SERNEGRA</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/dist/css/simple-datatables.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -40,16 +41,16 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top sernegra-bg-brown">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top sernegra-bg-dark-brown">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">X SERNEGRA</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#"><strong>X SERNEGRA</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="alterna navegação">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Início</a>
+                <a class="nav-link" href="#">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#evento">Evento</a>
@@ -64,13 +65,11 @@
                 <a class="nav-link" href="#atividades">Atividades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#feirafro">Feirafro</a>
+                <a class="nav-link" href="#feirafro">FEIRAFRO</a>
               </li>
             </ul>
             <div class="d-flex">
-              <button class="btn btn-lg btn-success rounded-pill sernegra-bg-green" type="submit">
-                Realizar Inscrição
-              </button>
+              <a href="#" class="btn btn-lg btn-success rounded-pill sernegra-bg-green">Realizar Inscrição</a>
             </div>
           </div>
         </div>
@@ -79,62 +78,69 @@
     <main>
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#707"/></svg>
+          <div class="carousel-item active sernegra-carousel-image"
+            style="background-image:url('/images/carousel/aerial_view_of_amazon_river_by_neil_palmer.jpeg')">
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#077"/></svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#770"/></svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>
-                  Feirafro
+                <div class="row">
+                  <div class="col-xxl-2 col-md-4 col-xd-12">
+                    <img src="images/sernegra_logo_and_slogan_v2.png" class="sernegra-mark">
+                  </div>
+                </div>
                 </h1>
+                <div class="float-end sernegra-photo-credits">Fotografia por Neil Palmer (CC BY 3.0)</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item sernegra-carousel-image"
+            style="background-image:url('/images/carousel/aerial_view_of_the_amazon_forest_by_jorge_kike_medina.jpeg')">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Simpósios Temáticos</h1>
+                <p>
+                  A Pró-Reitoria de Extensão, por meio da comissão organizadora do
+                  evento SERNEGRA, torna pública a chamada para seleção de Simpósios
+                  Temáticos (ST) para o referido evento.</p>
+                  <a href="#simposios" class="btn btn-secondary">Mais informações</a>
+                <div class="float-end sernegra-photo-credits">Fotografia por Jorge Kike Mmedina (CC BY 3.0)</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item sernegra-carousel-image"
+            style="background-image:url('/images/carousel/another_aerial_view_of_amazon_raiforest_by_neil_palmer.jpeg')">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>FEIRAFRO</h1>
                 <p>
                   Durante a feira o/a empreendedor/a poderá apresentar e comercializar seus
                   produtos.
                 </p>
-                <p>
-                  <a class="btn btn-lg btn-secondary" href="#feirafro">Saiba mais...</a>
-                </p>
+                <a href="#feirafro" class="btn btn-secondary">Mais informações</a>
+                <div class="float-end sernegra-photo-credits">Fotografia por Neil Palmer (CC BY 3.0)</div>
               </div>
             </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Próximo</span>
         </button>
       </div>
+
       <div class="container marketing">
+
         <div class="row featurette">
           <a name="evento"></a>
-          <div class="col-md-9">
+          <div class="col-md-8 offset-md-2">
             <h2 class="featurette-heading">Evento</h2>
             <p>
               <span class="lead sernegra-fg-brown">
@@ -162,13 +168,13 @@
               grupos sociais na Amazônia.
             </p>
           </div>
-          <div class="col-md-3 sernegra-bg-light-brown"></div>
         </div>
+
         <hr class="featurette-divider">
+
         <div class="row featurette">
           <a name="simposios"></a>
-          <div class="col-md-3 sernegra-bg-dark-brown"></div>
-          <div class="col-md-9">
+          <div class="col-md-8 offset-md-2">
             <h2 class="featurette-heading">Simpósios Temáticos</h2>
             <p>
               <span class="lead sernegra-fg-brown">
@@ -198,10 +204,12 @@
             </p>
           </div>
         </div>
+
         <hr class="featurette-divider">
+
         <div class="row featurette">
           <a name="palestrantes"></a>
-          <div class="col-md-12">
+          <div class="col-md-10 offset-md-1">
             <h2 class="featurette-heading">Palestrantes</h2>
             <p>Coloquem um texto aqui.</p>
             <div class="row">
@@ -223,36 +231,65 @@
             </div>
           </div>
         </div>
+
         <hr class="featurette-divider">
+
         <div class="row featurette">
           <a name="atividades"></a>
-          <div class="col-md-9">
+          <div class="col-md-8 offset-md-2">
             <h2 class="featurette-heading">Atividades</h2>
-            <p>
-              <span class="lead sernegra-fg-brown">
-                Primeira frase do primeiro parágrafo.
-              </span>
-              Demais frases do parágrafo.
-            </p>
-            <p>
-              Demais parágrafos.
-            </p>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3 sernegra-bg-dark-brown"></div>
         </div>
+
         <hr class="featurette-divider">
+
         <div class="row featurette">
           <a name="feirafro"></a>
-          <div class="col-md-3 sernegra-bg-dark-brown"></div>
-          <div class="col-md-9">
-            <h2 class="featurette-heading">Feirafro</h2>
-            <p>
-              <span class="lead sernegra-fg-brown">
-                Prezado/a empreendedor/a negro/a, o evento SERNEGRA é um evento
-                anual que promove reflexões e constrói caminhos para a equidade
-                racial e de gênero, contribuindo para uma educação antirracista
-                e antissexista.
-              </span>
+          <div class="col-md-8 offset-md-2">
+            <h2 class="featurette-heading">FEIRAFRO</h2>
+            <p><span class="lead sernegra-fg-brown">
+              Prezado/a empreendedor/a negro/a, o evento SERNEGRA é um evento
+              anual que promove reflexões e constrói caminhos para a equidade
+              racial e de gênero, contribuindo para uma educação antirracista
+              e antissexista.</span>
               Este ano o evento está sendo organizado pelo Instituto Federal do
               Amazonas (IFAM) e acontecerá nos dias 23 a 26 de novembro de 2021.
               Entre as muitas atividades do evento está programada a realização de
@@ -260,23 +297,21 @@
               26 de novembro. O evento será 100% online. Durante a feira o/a
               empreendedor/a poderá apresentar e comercializar seus produtos.
               Caso você tenha interesse em participar solicitamos o preenchimento
-              <a href="https://forms.gle/2piksi69F71sEGkb6" target="_blank">
-                deste formulário
-              </a>.
+              <a href="https://forms.gle/2piksi69F71sEGkb6" target="_blank">deste
+              formulário</a>.
             </p>
           </div>
         </div>
+
         <hr class="featurette-divider">
       </div>
-      <footer class="container">
+      <footer class="container sernegra-footer">
+        <p>Organizado pelo Instituto Federal de Educação, Ciência e Tecnologia do Amazonas - IFAM</p>
         <p class="float-end">
           <a href="#">Voltar ao início</a>
         </p>
-        <p>
-        Organizado pelo Instituro Federal da Amazônia.
-      </p>
       </footer>
     </main>
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   </body>
 </html>
