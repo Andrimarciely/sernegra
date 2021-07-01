@@ -60,7 +60,7 @@ A parte mais importante, o que falta:
 - Os dados dos palestrantes;
 - Incluí parte do conteúdo que já está na Even3 mas valeria a pena que
   fosse feita uma validação/atualização;
-- O botão de "Realizar Inscrilção" apontar pro Even3 e
+- O botão de "Realizar Inscrição" apontar pro Even3 e
 - Colocar o relógio, posso ver o que precisa ser feito (ou podemos escrever
   um).
 
