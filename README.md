@@ -71,7 +71,7 @@ A parte mais importante, o que falta:
   que criei um padrão ao invés de redefinir o CSS do Bootstrap);
 - Os dados dos palestrantes;
 - Incluí parte do conteúdo que já está na Even3 mas valeria a pena que
-  fosse feita uma validação/atualização;
+  fosse feita uma validação/atualização;t
 - Os dados do IFAM lá no final;
 - Remover os comentários do HTML;
 - O botão de "Realizar Inscrição" apontar pro Even3 e
