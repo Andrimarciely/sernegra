@@ -1,41 +1,65 @@
-.fundo-capa {
-  background-color: #d9ad6e;
+MAIN A {
+  color: #6d433e;
+  text-decoration: underline;
 }
 
-BODY {
-  background-color: #f1e4d1;
-  font-size: 14pt;
+MAIN A:Hover {
+  background-color: #d9ad6e;
+  color: #000000;
+  text-decoration: none;
 }
 
 .sernegra-fg-brown{
-  color: #6c433d;
+  color: #6d433e;
+}
+
+.sernegra-footer {
+}
+
+.sernegra-bg-brown{
+  background-color: #6d433e
 }
 
 .sernegra-bg-dark-brown{
   background-color: #4b3635;
 }
-.sernegra-bg-brown{
-  background-color: #6c433d;
-}
+
 .sernegra-bg-light-brown{
   background-color: #d9ad6e;
 }
 
-.sernegra-bg-green{
-  background-color: #5caa76;
+.sernegra-bg-green {
+  background-color: #5daa74;
+}
+
+.sernegra-carousel-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sernegra-mark {
+  width:100%;
+}
+
+.sernegra-photo-credits {
+  font-size: 60%;
 }
 
 /*
-  Paleta de Cores:
+  Paleta de Cores (revisada):
     #000000 = preto
     #4b3635 = marrom escuro
-    #6c433d = marrom
+    #6d433e = marrom
     #d9ad6e = marrom claro
-    #e9d298 = amarelo(?) escuro
+    #eddbc2 = amarelo(?) escuro
     #f1e4d1 = amrarel(?) claro
     #ffffff = branco
-    #5caa76  
+
+    #5caa76 = verde (marca)
+    #f8cc8f = amarelo (marca)
+
     #359937 = verde do IF
     #ce1d21 = vermelho do IF
-    #888a85 = um cinz genérico'
+    #888a85 = cinza genérico
 */
