@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,295 +24,274 @@
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/dist/css/simple-datatables.css" rel="stylesheet">
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
     </style>
     <link href="assets/dist/carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top sernegra-bg-dark-brown">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><strong>X SERNEGRA</strong></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="alterna navegação">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top sernegra-bg-dark-brown">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong>X SERNEGRA</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="alterna navegação">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#evento">Evento</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#simposios">Simpósios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#palestrantes">Palestrantes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#atividades">Atividades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#feirafro">FEIRAFRO</a>
-              </li>
-            </ul>
-            <div class="d-flex">
-              <a href="#" class="btn btn-lg btn-success rounded-pill sernegra-bg-green">Realizar Inscrição</a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#evento">Evento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#simposios">Simpósios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#palestrantes">Palestrantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#atividades">Atividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feirafro">FEIRAFRO</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-lg btn-success rounded-pill sernegra-bg-green">Realizar Inscrição</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main>
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active sernegra-carousel-image"
-            style="background-image:url('/images/carousel/aerial_view_of_amazon_river_by_neil_palmer.jpeg')">
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <div class="row">
-                  <div class="col-xxl-2 col-md-4 col-xd-12">
-                    <img src="images/sernegra_logo_and_slogan_v2.png" class="sernegra-mark">
-                  </div>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active sernegra-carousel-image" style="background-image:url('/images/carousel/aerial_view_of_amazon_river_by_neil_palmer.jpeg')">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <div class="row">
+                                <div class="col-xxl-2 col-md-4 col-xd-12">
+                                    <img src="images/sernegra_logo_and_slogan_v2.png" class="sernegra-mark">
+                                </div>
+                            </div>
+                            </h1>
+                            <div class="float-end sernegra-photo-credits">Fotografia por Neil Palmer (CC BY 3.0)</div>
+                        </div>
+                    </div>
                 </div>
-                </h1>
-                <div class="float-end sernegra-photo-credits">Fotografia por Neil Palmer (CC BY 3.0)</div>
-              </div>
+                <div class="carousel-item sernegra-carousel-image" style="background-image:url('/images/carousel/aerial_view_of_the_amazon_forest_by_jorge_kike_medina.jpeg')">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Simpósios Temáticos</h1>
+                            <p>
+                                A Pró-Reitoria de Extensão, por meio da comissão organizadora do evento SERNEGRA, torna pública a chamada para seleção de Simpósios Temáticos (ST) para o referido evento.</p>
+                            <a href="#simposios" class="btn btn-secondary">Mais informações</a>
+                            <div class="float-end sernegra-photo-credits">Fotografia por Jorge Kike Mmedina (CC BY 3.0)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item sernegra-carousel-image" style="background-image:url('/images/carousel/another_aerial_view_of_amazon_raiforest_by_neil_palmer.jpeg')">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>FEIRAFRO</h1>
+                            <p>
+                                Durante a feira o/a empreendedor/a poderá apresentar e comercializar seus produtos.
+                            </p>
+                            <a href="#feirafro" class="btn btn-secondary">Mais informações</a>
+                            <div class="float-end sernegra-photo-credits">Fotografia por Neil Palmer (CC BY 3.0)</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item sernegra-carousel-image"
-            style="background-image:url('/images/carousel/aerial_view_of_the_amazon_forest_by_jorge_kike_medina.jpeg')">
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Simpósios Temáticos</h1>
-                <p>
-                  A Pró-Reitoria de Extensão, por meio da comissão organizadora do
-                  evento SERNEGRA, torna pública a chamada para seleção de Simpósios
-                  Temáticos (ST) para o referido evento.</p>
-                  <a href="#simposios" class="btn btn-secondary">Mais informações</a>
-                <div class="float-end sernegra-photo-credits">Fotografia por Jorge Kike Mmedina (CC BY 3.0)</div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item sernegra-carousel-image"
-            style="background-image:url('/images/carousel/another_aerial_view_of_amazon_raiforest_by_neil_palmer.jpeg')">
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>FEIRAFRO</h1>
-                <p>
-                  Durante a feira o/a empreendedor/a poderá apresentar e comercializar seus
-                  produtos.
-                </p>
-                <a href="#feirafro" class="btn btn-secondary">Mais informações</a>
-                <div class="float-end sernegra-photo-credits">Fotografia por Neil Palmer (CC BY 3.0)</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Próximo</span>
         </button>
-      </div>
+        </div>
 
-      <div class="container marketing">
+        <div class="container marketing">
 
-        <div class="row featurette">
-          <a name="evento"></a>
-          <div class="col-md-8 offset-md-2">
-            <h2 class="featurette-heading">Evento</h2>
-            <p>
-              <span class="lead sernegra-fg-brown">
+            <div class="row featurette">
+                <a name="evento"></a>
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="featurette-heading">Evento</h2>
+                    <p>
+                        <span class="lead sernegra-fg-brown">
                 O SERNEGRA é um evento que promove reflexões e constrói caminhos
                 para a equidade racial e de gênero, contribuindo para uma educação
                 antirracista e antissexista.
-              </span>
-              Trata-se de um congresso científico que dialoga com diferentes linhas
-              de pesquisa, militância e sujeitos de resistência e conta com a
-              apresentação de trabalhos em sessões temáticas, além de oficinas,
-              palestras, rodas de conversas, mesas redondas, apresentações culturais,
-              feirafro, entre outras ações. O SERNEGRA chega a sua décima edição
-              em 2021. Desde o seu nascimento no Instituto Federal de Brasília (IFB)
-              tem se irradiado pela Rede Federal de Ensino. Neste ano, o evento
-              acontece entre os dias 23 e 26 de novembro, de modo virtual, em razão
-              da pandemia. Ainda que online, esta edição tem como anfitrião o
-              Instituto Federal de Educação, Ciência e Tecnologia do Amazonas (IFAM)
-              e como desafio a visibilidade das negritudes, pretices e o "ser negro/a"
-              na Amazônia.
-            </p>
-            <p>
-              <strong>Objetivo</strong>: Provocar a discussão sobre a presença da
-              população negra nos diversos espaços sociais no contexto amazônico,
-              tendo como pressuposto o processo histórico de invisibilização desses
-              grupos sociais na Amazônia.
-            </p>
-          </div>
-        </div>
+              </span> Trata-se de um congresso científico que dialoga com diferentes linhas de pesquisa, militância e sujeitos de resistência e conta com a apresentação de trabalhos em sessões temáticas, além de oficinas, palestras,
+                        rodas de conversas, mesas redondas, apresentações culturais, feirafro, entre outras ações. O SERNEGRA chega a sua décima edição em 2021. Desde o seu nascimento no Instituto Federal de Brasília (IFB) tem se irradiado pela Rede Federal
+                        de Ensino. Neste ano, o evento acontece entre os dias 23 e 26 de novembro, de modo virtual, em razão da pandemia. Ainda que online, esta edição tem como anfitrião o Instituto Federal de Educação, Ciência e Tecnologia do Amazonas
+                        (IFAM) e como desafio a visibilidade das negritudes, pretices e o "ser negro/a" na Amazônia.
+                    </p>
+                    <p>
+                        <strong>Objetivo</strong>: Provocar a discussão sobre a presença da população negra nos diversos espaços sociais no contexto amazônico, tendo como pressuposto o processo histórico de invisibilização desses grupos sociais na Amazônia.
+                    </p>
+                </div>
+            </div>
 
-        <hr class="featurette-divider">
+            <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <a name="simposios"></a>
-          <div class="col-md-8 offset-md-2">
-            <h2 class="featurette-heading">Simpósios Temáticos</h2>
-            <p>
-              <span class="lead sernegra-fg-brown">
+            <div class="row featurette">
+                <a name="simposios"></a>
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="featurette-heading">Simpósios Temáticos</h2>
+                    <p>
+                        <span class="lead sernegra-fg-brown">
                 A Pró-Reitoria de Extensão, por meio da comissão organizadora do
                 evento SERNEGRA, torna pública a chamada para seleção de Simpósios
                 Temáticos (ST) para o referido evento.
-              </span>
-              O evento SERNEGRA é um evento anual e, em 2021, terá como temática:
-              Negritude e Pretice na Amazônia: Resistências da Floresta e das Águas.
-            </p>
-            <p>
-              Os Simpósios Temáticos são espaços de divulgação e debate de pesquisas
-              em desenvolvimento ou concluídas, realizadas por professores, estudantes
-              de nível médio, superior e pós-graduação. Assim como, para relatos de
-              experiências de pessoas da comunidade que não estão ligadas às
-              instituições de ensino, isto é, lideranças comunitárias dentre outros
-              interessados. Os ST têm por objetivo reunir os trabalhos apresentados
-              sobre diferentes temáticas relacionadas à questão racial, buscando
-              assim proporcionar um encontro de pesquisadores/as e interessado/as
-              em torno de um mesmo tema.
-            </p>
-            <p>
-              As propostas podem ser coordenadas por pessoas da comunidade interna ou
-              externa, devendo pelo menos um membro da equipe ter a titulação de mestre.
-              As inscrições podem ser feitas no período de 26/05 a 18/07/2021 pelo
-              <a href="https://forms.gle/krK1fH4bAFzmJCHQ7" target="_blank">link</a>.
-            </p>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <a name="palestrantes"></a>
-          <div class="col-md-10 offset-md-1">
-            <h2 class="featurette-heading">Palestrantes</h2>
-            <p>Coloquem um texto aqui.</p>
-            <div class="row">
-              <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h3>Palestrante 1</h3>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-              </div>
-              <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h3>Palestrante 2</h3>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-              </div>
-              <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h3>Palestrante 3</h3>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-              </div>
+              </span> O evento SERNEGRA é um evento anual e, em 2021, terá como temática: Negritude e Pretice na Amazônia: Resistências da Floresta e das Águas.
+                    </p>
+                    <p>
+                        Os Simpósios Temáticos são espaços de divulgação e debate de pesquisas em desenvolvimento ou concluídas, realizadas por professores, estudantes de nível médio, superior e pós-graduação. Assim como, para relatos de experiências de pessoas da comunidade
+                        que não estão ligadas às instituições de ensino, isto é, lideranças comunitárias dentre outros interessados. Os ST têm por objetivo reunir os trabalhos apresentados sobre diferentes temáticas relacionadas à questão racial, buscando
+                        assim proporcionar um encontro de pesquisadores/as e interessado/as em torno de um mesmo tema.
+                    </p>
+                    <p>
+                        As propostas podem ser coordenadas por pessoas da comunidade interna ou externa, devendo pelo menos um membro da equipe ter a titulação de mestre. As inscrições podem ser feitas no período de 26/05 a 18/07/2021 pelo
+                        <a href="https://forms.gle/krK1fH4bAFzmJCHQ7" target="_blank">link</a>.
+                    </p>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <hr class="featurette-divider">
+            <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <a name="atividades"></a>
-          <div class="col-md-8 offset-md-2">
-            <h2 class="featurette-heading">Atividades</h2>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div class="row featurette">
+                <a name="palestrantes"></a>
+                <div class="col-md-10 offset-md-1">
+                    <h2 class="featurette-heading">Palestrantes</h2>
+                    <p>Coloquem um texto aqui.</p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                            <h3>Luana Tolentino</h3>
+                            <p>Doutoranda do Programa de Pós-Graduação em Educação da UFMG. Professora de História da Educação Básica desde 2008, têm se dedicado à Formação Inicial e Continuada de Professores. É autora do livro "Outra educação é possível:
+                                feminismo, antirracismo e inclusão em sala de aula". É colunista da revista Carta Capital e pesquisadora do NEIA -Núcleo de Estudos Interdisciplinares da Alteridade/UFMG.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                            <h3>Jones Manoel da Silva</h3>
+                            <p>Historiador, marxista, youtuber, professor e comunicador popular.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                            <h3>Patrícia Maria Melo Sampaio</h3>
+                            <p>Possui mestrado e doutorado em História (UFF/RJ)e Pós-Doutorado (UNICAMP). É Professor Titular do Departamento de História da Universidade Federal do Amazonas (UFAM). Atualmente, está como Investigadora Visitante na Universidade
+                                de Lisboa. Atua nas áreas de história indígena e do indigenismo, história da ciência, história colonial/imperial (Brasil e Amazônia) e história da escravidão africana na Amazônia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <a name="atividades"></a>
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="featurette-heading">Atividades</h2>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Accordion Item #1
                   </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Accordion Item #2
                   </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Accordion Item #3
                   </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
 
-        <hr class="featurette-divider">
+            <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <a name="feirafro"></a>
-          <div class="col-md-8 offset-md-2">
-            <h2 class="featurette-heading">FEIRAFRO</h2>
-            <p><span class="lead sernegra-fg-brown">
+            <div class="row featurette">
+                <a name="feirafro"></a>
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="featurette-heading">FEIRAFRO</h2>
+                    <p><span class="lead sernegra-fg-brown">
               Prezado/a empreendedor/a negro/a, o evento SERNEGRA é um evento
               anual que promove reflexões e constrói caminhos para a equidade
               racial e de gênero, contribuindo para uma educação antirracista
-              e antissexista.</span>
-              Este ano o evento está sendo organizado pelo Instituto Federal do
-              Amazonas (IFAM) e acontecerá nos dias 23 a 26 de novembro de 2021.
-              Entre as muitas atividades do evento está programada a realização de
-              uma Feira de Empreendedorismo Negro (FEIRAFRO) que acontecerá no dia
-              26 de novembro. O evento será 100% online. Durante a feira o/a
-              empreendedor/a poderá apresentar e comercializar seus produtos.
-              Caso você tenha interesse em participar solicitamos o preenchimento
-              <a href="https://forms.gle/2piksi69F71sEGkb6" target="_blank">deste
+              e antissexista.</span> Este ano o evento está sendo organizado pelo Instituto Federal do Amazonas (IFAM) e acontecerá nos dias 23 a 26 de novembro de 2021. Entre as muitas atividades do evento está programada a realização de uma Feira de
+                        Empreendedorismo Negro (FEIRAFRO) que acontecerá no dia 26 de novembro. O evento será 100% online. Durante a feira o/a empreendedor/a poderá apresentar e comercializar seus produtos. Caso você tenha interesse em participar solicitamos
+                        o preenchimento
+                        <a href="https://forms.gle/2piksi69F71sEGkb6" target="_blank">deste
               formulário</a>.
-            </p>
-          </div>
-        </div>
+                    </p>
+                </div>
+            </div>
 
-        <hr class="featurette-divider">
-      </div>
-      <footer class="container sernegra-footer">
-        <p>Organizado pelo Instituto Federal de Educação, Ciência e Tecnologia do Amazonas - IFAM</p>
-        <p class="float-end">
-          <a href="#">Voltar ao início</a>
-        </p>
-      </footer>
+            <hr class="featurette-divider">
+        </div>
+        <footer class="container sernegra-footer">
+            <img src="images/social/logoifam.png" width="320" height="205" />
+            <p>Organizado pelo Instituto Federal de Educação, Ciência e Tecnologia do Amazonas - IFAM</p>
+            <p class="float-end">
+                <a href="#">Voltar ao início</a>
+            </p>
+        </footer>
     </main>
     <script src="assets/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-  </body>
+</body>
+
 </html>
