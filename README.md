@@ -1,38 +1,29 @@
-![](images/sernegra_marca.png)
-
 X SERNEGRA
 ---
 
 O modelo original era tão caótico que realmente se perderia mais tempo
 tentando remendá-lo do que fazendo algo novo. Este novo modelo utiliza
-apenas o [Bootstrap](https://getbootstrap.com/) (versão 5.0.2) e o
-leiaute é baseado no tema de exemplo
+apenas o [Bootstrap](https://getbootstrap.com/) (versão 5.0.2, CSS e
+JS) e o leiaute é baseado no tema de exemplo
 [Carousel](https://getbootstrap.com/docs/5.0/examples/carousel/).
+
+Ainda faz uso do
+[Simple-DataTables](https://github.com/fiduswriter/Simple-DataTables).
+para a criação de tabelas dinâmicas com paginação e filtragem.
 
 # Estrutura do projeto
 Os arquivos estão organizados da seguinte forma:
-- `assets` : Recursos usados no projeto.
-    - `data` : Arquivos de dados para carregamento dinâmico.
-    - `dist` : Arquivos de distribuição, não dá pra editar.
-        - `css`
-            - `bootstrap.min.css` : Parte CSS do **Bootstrap** já minificado.
-            - `bootstrap.min.css.map` : Arquivo de mapa do CSS do **Bootstrap**.
-            - `simple-datatables.css` : Parte CSS do [Simple-DataTables](https://github.com/fiduswriter/Simple-DataTables).
-        - `js`
-            - `bootstrap.bundle.min.js` : Parte JavaScript do **Bootstrap** já minificado.
-            - `bootstrap.bundle.min.js.map` : Arquivo de mapa do JS do **Bootstrap**.
-            - `simple-datatables.js` : Parte JavaScript do [Simple-DataTables](https://github.com/fiduswriter/Simple-DataTables).
-    - `carousel.css` : A parte CSS do exemplo usado no **carousel**.
-- `css` : Os arquivos CSS do projeto.
-    - `style.css` : O arquivo de CSS específico do projeto.
-- `feirafro` : A listagem de empreendedores.
-    - `index.html` : A página HTML propriamente dita.
-- `images`
-    - `carousel` : Imagens de fundo do carrossel.
-    - `social` : Imagens para as redes sociais.
-    - `sernegra_marca.png` : A imagem usada neste arquivo.
-    - `sernegra_logo_and_slogan_v2.png` : Arte do evento com o _slogan_.
-- `js` : Os arquivos JavaScript do projeto.
+- `assets/` : Recursos usados no projeto.
+    - `data/` : Arquivos de dados para carregamento dinâmico.
+    - `dist/` : Arquivos de distribuição, não dá pra editar.
+        - `css/`
+        - `js/`
+- `css/` : Os arquivos CSS do projeto.
+- `feirafro/` : A listagem de empreendedores.
+- `images/`
+    - `carousel/` : Imagens de fundo do carrossel.
+    - `social/` : Imagens para as redes sociais.
+- `js/` : Os arquivos JavaScript do projeto.
 - `index.html` : A página HTML propriamente dita.
 - `favicon.png` : Ícone para favorito.
 - `README.md` : Este arquivo.
@@ -71,7 +62,7 @@ A parte mais importante, o que falta:
   que criei um padrão ao invés de redefinir o CSS do Bootstrap);
 - Os dados dos palestrantes;
 - Incluí parte do conteúdo que já está na Even3 mas valeria a pena que
-  fosse feita uma validação/atualização;t
+  fosse feita uma validação/atualização;
 - Os dados do IFAM lá no final;
 - Remover os comentários do HTML;
 - O botão de "Realizar Inscrição" apontar pro Even3 e
