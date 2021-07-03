@@ -2,50 +2,74 @@
 Rotinas para o carregamento de conteúdo
 */
 
-forceTranslation = (table) => {
+const LANGUAGE = "pt"
+
+const translatedMessages = {
+    pt: {
+        placeholder: "Buscar...",
+        perPage: "{select} itens por página",
+        noRows: "Nenhum registro encontrado",
+        info: "Mostrando de {start} até {end} de {rows} item(s)"
+    }
+}
+
+
+forceTableTranslation = (table, language) => {
   /*
   Como o Simple-DataTables não tem opção de internacionalização, esta
   rotina cuida de alterar os valores das mensagens diretamente na
   instância (não é possível fazer na classe pois são constantes).
   */
 
-  // novas mensagens
-  table.options.labels = {
-    placeholder: "Buscar...",
-    perPage: "{select} itens por página",
-    noRows: "Nenhum registro encontrado",
-    info: "Mostrando de {start} até {end} de {rows} item(s)"
-  }
+    let messages = translatedMessages[language]
 
-  // altera o 'placeholder' da caixa de pesquisa se ela existe
-  if (table.options.searchable) {
-    elements = document.getElementsByClassName("dataTable-input")
-    elements[0].placeholder = table.options.labels.placeholder
-  }
+    if (messages){
 
-  // TODO: alterar o "entries per page" para refletir 'perPage'
+        table.options.labels = messages
 
-  // força a atualização da tabela.
-  table.update()
+        if (table.options.searchable) {
+            let searchElements = document.getElementsByClassName(
+                "dataTable-input"
+            )
+            searchElements[0].placeholder = table.options.labels.placeholder
+        }
+
+        let dropElements = document.getElementsByClassName(
+            "dataTable-dropdown"
+        )
+
+        if (dropElements[0]) {
+            let selectElement = dropElements[0].children[0].children[0]
+            let entiesPerPageElement = selectElement.nextSibling
+            entiesPerPageElement.textContent = table
+                .options
+                .labels
+                .perPage.split(/\{.+\}/)[1]
+        }
+
+        table.update()
+    }
 }
 
+
 loadContent = (tableName, jsonURL) => {
-  /*
-  Preenche uma tabela no DOM de ID 'tableName' com os dados de um
-  arquivo JSON carregado de 'jsonURL'.
-  */
-  fetch(jsonURL)
-    .then(response => response.json())
-    .then(data => {
-      if (!data.length) {
-        return
-      }
-      let table = new simpleDatatables.DataTable(tableName, {
-        data: {
-          headings: Object.keys(data[0]),
-          data: data.map(item => Object.values(item))
-        }
+    /*
+    Preenche u/ma tabela no DOM de ID 'tableName' com os dados de um
+    arquivo JSON carregado de 'jsonURL'.
+    */
+    fetch(jsonURL)
+        .then(response => response.json())
+        .then(data => {
+            if (!data.length) {
+                return
+            }
+            let table = new simpleDatatables.DataTable(tableName, {
+                data: {
+                    headings: Object.keys(data[0]),
+                    data: data.map(item => Object.values(item))
+                }
+            })
+            
+        forceTableTranslation(table, LANGUAGE)
     })
-  forceTranslation(table)
-  })
 }

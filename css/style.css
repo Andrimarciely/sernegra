@@ -1,40 +1,40 @@
 MAIN A {
-    color: #6d433e;
-    text-decoration: underline;
+  color: #6d433e;
+  text-decoration: underline;
 }
 
 MAIN A:Hover {
-    background-color: #d9ad6e;
-    color: #000000;
-    text-decoration: none;
+  background-color: #d9ad6e;
+  color: #000000;
+  text-decoration: none;
 }
 
 .sernegra-fg-brown {
-    color: #6d433e;
+  color: #6d433e;
 }
 
 .sernegra-footer {}
 
 .sernegra-bg-brown {
-    background-color: #6d433e
+  background-color: #6d433e
 }
 
 .sernegra-bg-dark-brown {
-    background-color: #4b3635;
+  background-color: #4b3635;
 }
 
 .sernegra-bg-light-brown {
-    background-color: #d9ad6e;
+  background-color: #d9ad6e;
 }
 
 .sernegra-bg-green {
-    background-color: #5daa74;
+  background-color: #5daa74;
 }
 
 .sernegra-carousel-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .sernegra-mark {
@@ -42,9 +42,13 @@ MAIN A:Hover {
 }
 
 .sernegra-photo-credits {
-    font-size: 60%;
+  font-size: 60%;
+  margin-top: 2em;
 }
 
+.sernegra-ifam-logo {
+  width: 150px;
+}
 
 /*
   Paleta de Cores (revisada):
