@@ -56,6 +56,3 @@ openSpeakerModal = (speakerId) => {
         siteModal.toggle()
     }
 }
-
-// atualiza a lista dos palestrantes
-loadSpeakerData(["LuanaTolentino"])
