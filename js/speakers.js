@@ -13,6 +13,25 @@ var siteModal = new bootstrap.Modal(document.getElementById(SITE_MODAL), {
 })
 
 
+loadSpeakerData = (speakerList) => {
+    /*
+    Para deixar a parte dos palestrantes menos repetitiva, esta rotina
+    cuida de fazer a carga das fotos, do nome e de configurar a chamada
+    para a janela modal de ambos a partir dos dados dentro de <h4></h4>
+    */
+    
+    speakerList.forEach(speaker =>{
+        
+        let imageElement =document.getElementById("photo" + speaker)
+        let dataElement = document.getElementById("speaker" + speaker)
+        
+        dataElement.textContent = dataElement.dataset.name
+        imageElement.src = dataElement.dataset.photo
+        imageElement.onclick = () => { openSpeakerModal("speaker" + speaker) }
+    })
+
+}
+
 openSpeakerModal = (speakerId) => {
     /*
     Usa a estrutrutua do HTML5 e do Bootstrap para popular os dados de
@@ -37,3 +56,6 @@ openSpeakerModal = (speakerId) => {
         siteModal.toggle()
     }
 }
+
+// atualiza a lista dos palestrantes
+loadSpeakerData(["LuanaTolentino"])

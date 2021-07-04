@@ -176,27 +176,38 @@
         </div>
 
         <hr class="featurette-divider">
-
         <div class="row featurette">
           <a name="palestrantes"></a>
           <div class="col-md-10 offset-md-1">
             <h2 class="featurette-heading">Palestrantes</h2>
             <div class="row" style="margin-top:2em;">
+              <!--  COLA:
+                    As informações do palestrante ficam dentro do dataset
+                    do próprio elemento (e em um único lugar).
+
               <div class="col-lg-4">
-                <img src="images/speakers/luana_tolentino.jpeg" class="img-thumbnmail rounded-circle" onClick='openSpeakerModal("speakerLuana")'>
-                <h4 id="speakerLuana"
+                <img id="photo«NomeDoPalestrante»" class="img-thumbnmail rounded-circle">
+                <h4 id="speaker«NomeDoPalestrante»"
+                  data-name="Nome do Palestrante"
+                  data-bio="Bio do Palestrante"
+                  data-photo="images/speakers/nome_do_palestrante.jpeg"></h4>
+              </div>
+              COLA -->
+              <div class="col-lg-4">
+                <img id="photoLuanaTolentino" class="img-thumbnmail rounded-circle">
+                <h4 id="speakerLuanaTolentino"
                   data-name="Luana Tolentino"
                   data-bio="Doutoranda do Programa de Pós-Graduação em Educação da UFMG. Professora de História da Educação Básica desde 2008, têm se dedicado à Formação Inicial e Continuada de Professores. É autora do livro &quot;Outra educação é possível: feminismo, antirracismo e inclusão em sala de aula&quot;. É colunista da revista Carta Capital e pesquisadora do NEIA -Núcleo de Estudos Interdisciplinares da Alteridade/UFMG."
-                  data-photo="images/speakers/luana_tolentino.jpeg">Luana Tolentino</h4>
+                  data-photo="images/speakers/luana_tolentino.jpeg"></h4>
               </div>
               <div class="col-lg-4">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h3>Jones Manoel da Silva</h3>
+                <h4>Jones Manoel da Silva</h4>
                 <p>Historiador, marxista, youtuber, professor e comunicador popular.</p>
               </div>
               <div class="col-lg-4">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h3>Patrícia Maria Melo Sampaio</h3>
+                <h4>Patrícia Maria Melo Sampaio</h4>
                 <p>Possui mestrado e doutorado em História (UFF/RJ)e Pós-Doutorado (UNICAMP). É Professor Titular do Departamento de História da Universidade Federal do Amazonas (UFAM). Atualmente, está como Investigadora Visitante na Universidade
                 de Lisboa. Atua nas áreas de história indígena e do indigenismo, história da ciência, história colonial/imperial (Brasil e Amazônia) e história da escravidão africana na Amazônia.</p>
               </div>
