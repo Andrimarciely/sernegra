@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Negritude e Pretice na Amazônia: Resistências da Floresta e das Águas. De 23 a 26 de novembro de 2021.">
     <!-- ponham seus nominhos aqui mas finalizem com "based on Bootstrap carousel example" -->
-    <meta name="author" content="... and based on Bootstrap's carousel example">
+    <meta name="Andrimarciely e Laura Leite " content="... and based on Bootstrap's carousel example">
     <!-- isto aqui serve para as pessoínhas que vão compartilhas nas xoxo medias... falta completar-->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="https://sernegra...">
@@ -77,6 +77,10 @@
       </nav>
     </header>
     <main>
+		<!-- <section class= "banner">
+			<img src="images/capa.png" class="sernegra-mark">
+		</section> -->
+		
       <div id="siteCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#siteCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
@@ -89,7 +93,7 @@
               <div class="carousel-caption text-start">
                 <div class="row">
                   <div class="col-xxl-2 col-md-4 col-xd-12">
-                    <img src="images/sernegra_logo_and_slogan_v2.png" class="sernegra-mark">
+					<img src="images/sernegra_logo_and_slogan_v2.png" class="sernegra-mark">
                   </div>
                 </div>
                 </h1>
@@ -200,11 +204,20 @@
                   data-bio="Doutoranda do Programa de Pós-Graduação em Educação da UFMG. Professora de História da Educação Básica desde 2008, têm se dedicado à Formação Inicial e Continuada de Professores. É autora do livro &quot;Outra educação é possível: feminismo, antirracismo e inclusão em sala de aula&quot;. É colunista da revista Carta Capital e pesquisadora do NEIA -Núcleo de Estudos Interdisciplinares da Alteridade/UFMG."
                   data-photo="images/speakers/luana_tolentino.jpeg"></h4>
               </div>
+			  <div class="col-lg-4">
+                <img id="photoJonesManoeldaSilva" class="img-thumbnmail rounded-circle">
+                <h4 id="speakerJonesManoeldaSilva"
+                  data-name="Jones Manoel da Silva"
+                  data-bio="Historiador, marxista, youtuber, professor e comunicador popular."
+                  data-photo="images/speakers/jones_manoel_da_silva.jpeg"></h4>
+              </div>
+			  <!---
               <div class="col-lg-4">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                 <h4>Jones Manoel da Silva</h4>
-                <p>Historiador, marxista, youtuber, professor e comunicador popular.</p>
-              </div>
+                <p></p>
+              </div> 
+			  -->
               <div class="col-lg-4">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                 <h4>Patrícia Maria Melo Sampaio</h4>
@@ -311,10 +324,11 @@
       </footer>
     </main>
     <script src="assets/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="/js/speakers.js" type="text/javascript"></script>
+    <script src="js/speakers.js" type="text/javascript"></script>
     <script>
       // atualiza a lista dos palestrantes
       loadSpeakerData(["LuanaTolentino"])
+	  loadSpeakerData(["JonesManoeldaSilva"])
     </script>
   </body>
 
