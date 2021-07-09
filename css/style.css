@@ -50,6 +50,11 @@ MAIN A:Hover {
   width: 150px;
 }
 
+.sernegra-table TD {
+  font-size: 75%;
+  text-align: center;
+}
+
 /*
   Paleta de Cores (revisada):
     #000000 = preto
