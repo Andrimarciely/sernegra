@@ -53,21 +53,5 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 O arquivo "favicon.ico" não existe, logo o erro de não ter sido encontrado.
 
-# O que falta fazer
-A parte mais importante, o que falta:
-- ~Faltam todas as imagens~ (agora falta menos);
-- ~Falta editar o carrossel colocando as chamadas necessárias (eu incluí
-  a feirafro como exemplo)~;
-- ~Cores dos links e das outras coisas~ (mudem apenas no "style.css", vejam
-  que criei um padrão ao invés de redefinir o CSS do Bootstrap);
-- Os dados dos palestrantes;
-- Incluí parte do conteúdo que já está na Even3 mas valeria a pena que
-  fosse feita uma validação/atualização;
-- Os dados do IFAM lá no final;
-- Remover os comentários do HTML;
-- O botão de "Realizar Inscrição" apontar pro Even3 e
-- Colocar o relógio, posso ver o que precisa ser feito (ou podemos escrever
-  um?).
-
 ---
 Bom trabalho para vocês!
