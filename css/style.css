@@ -1,3 +1,7 @@
+/* BODY {
+  background-color: #f1e4d1;
+} */
+
 MAIN A {
   color: #6d433e;
   text-decoration: underline;
@@ -51,8 +55,7 @@ MAIN A:Hover {
 }
 
 .sernegra-table TD {
-  font-size: 75%;
-  text-align: center;
+  font-size: 80%;
 }
 
 /*

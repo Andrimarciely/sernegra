@@ -1,5 +1,5 @@
 /*
-Rotinas para o carregamento de conteúdo
+Cuida da localização do Simple-DataTables
 */
 
 const LANGUAGE = "pt"
@@ -12,7 +12,6 @@ const translatedMessages = {
         info: "Mostrando de {start} até {end} de {rows} item(s)"
     }
 }
-
 
 forceTableTranslation = (table, language) => {
   /*
@@ -49,27 +48,4 @@ forceTableTranslation = (table, language) => {
 
         table.update()
     }
-}
-
-
-loadContent = (tableName, jsonURL) => {
-    /*
-    Preenche u/ma tabela no DOM de ID 'tableName' com os dados de um
-    arquivo JSON carregado de 'jsonURL'.
-    */
-    fetch(jsonURL)
-        .then(response => response.json())
-        .then(data => {
-            if (!data.length) {
-                return
-            }
-            let table = new simpleDatatables.DataTable(tableName, {
-                data: {
-                    headings: Object.keys(data[0]),
-                    data: data.map(item => Object.values(item))
-                }
-            })
-            
-        forceTableTranslation(table, LANGUAGE)
-    })
 }

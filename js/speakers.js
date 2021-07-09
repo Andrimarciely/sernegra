@@ -7,11 +7,9 @@ const SPEAKER_PHOTO = "speakerPhoto"
 const SPEAKER_NAME = "speakerName"
 const SPEAKER_BIO = "speakerBio"
 
-
 var siteModal = new bootstrap.Modal(document.getElementById(SITE_MODAL), {
   keyboard: false
 })
-
 
 loadSpeakerData = (speakerList) => {
     /*
